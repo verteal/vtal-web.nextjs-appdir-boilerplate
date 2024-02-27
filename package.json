@@ -1,0 +1,30 @@
+{
+  "name": "vtalweb-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test:open": "cypress open"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.24.1",
+    "@types/node": "18.15.8",
+    "@types/react": "18.0.29",
+    "@types/react-dom": "18.0.11",
+    "axios": "^1.3.4",
+    "eslint": "8.36.0",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vtal/eslint-config": "^1.0.2",
+    "cypress": "^13.6.6",
+    "eslint-config-next": "^14.1.0",
+    "typescript": "^5.0.3"
+  }
+}
