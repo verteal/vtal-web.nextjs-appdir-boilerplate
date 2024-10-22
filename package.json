@@ -23,7 +23,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@vtal/eslint-config": "^1.0.2",
+    "@vtal/eslint-config": "^1.0.6",
     "cypress": "^13.6.6",
     "eslint-config-next": "^14.1.0",
     "typescript": "^5.0.3"
