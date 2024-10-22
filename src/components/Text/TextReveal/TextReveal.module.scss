@@ -1,0 +1,11 @@
+@use "@styles/@root/colors";
+@use "@styles/@root/utils";
+
+.lineMask {
+  padding-right: 1.5rem;
+  overflow: hidden;
+
+  p {
+    margin: 0 0;
+  }
+}

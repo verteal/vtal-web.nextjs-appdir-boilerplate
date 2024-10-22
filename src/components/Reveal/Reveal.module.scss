@@ -1,0 +1,8 @@
+@use "@styles/@root/colors";
+@use "@styles/@root/utils";
+
+.line {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}

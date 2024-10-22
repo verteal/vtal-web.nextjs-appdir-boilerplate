@@ -1,0 +1,80 @@
+@use "@styles/@root/colors";
+@use "@styles/@root/utils";
+
+#phrase {
+  width: 100%;
+  padding: 1rem 0;
+  position: relative;
+
+  .marquee {
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow: hidden;
+
+    .track {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      white-space: nowrap;
+      will-change: transform;
+      animation: marquee-horizontal 50s linear infinite;
+
+      .text {
+        position: relative;
+        color: colors.$greyish;
+        font-family: utils.$main-font-regular;
+        font-size: 200px;
+        -webkit-text-size-adjust: 100%;
+        -webkit-box-direction: normal;
+        white-space: nowrap;
+        box-sizing: border-box;
+        padding-right: 0.3em;
+        padding-left: 0.3em;
+        -webkit-box-flex: 0;
+        flex: 0 0 auto;
+        @include utils.spacing(-10px);
+
+        &:before {
+          content: "";
+          width: 80px;
+          height: 80px;
+          background-image: url("/eye_badge.svg");
+          background-position: center center;
+          background-size: cover;
+          position: absolute;
+          top: 40%;
+          left: -30px;
+          border-radius: 50px;
+          animation: rotate 1.2s infinite;
+
+          @keyframes rotate {
+            0% {
+              transform: rotate(0deg);
+            }
+            50% {
+              transform: rotate(-360deg);
+            }
+            100% {
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes marquee-horizontal {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

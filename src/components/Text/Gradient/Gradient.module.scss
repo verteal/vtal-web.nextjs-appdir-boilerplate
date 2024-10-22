@@ -1,0 +1,21 @@
+@use "@styles/@root/colors";
+@use "@styles/@root/utils";
+
+.paragraph {
+  font-family: utils.$main-font-regular;
+  line-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  @include utils.spacing(-1px);
+
+  .word {
+    position: relative;
+    margin-right: 12px;
+    margin-top: 12px;
+
+    .shadow {
+      position: absolute;
+      opacity: 20%;
+    }
+  }
+}
